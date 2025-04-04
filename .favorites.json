@@ -1,20 +1,18 @@
 [
     {
         "type": "File",
-        "name": "d:\\Project\\dev-project\\dev-Fill&Sin\\dev\\sass\\_colors.scss",
+        "name": "/Users/makspiven/Documents/Курси веб/dev-StarBuks/dev/sass/variables.scss",
         "parent_id": null,
-        "fsPath": "d:\\Project\\dev-project\\dev-Fill&Sin\\dev\\sass\\_colors.scss",
-        "workspaceRoot": null,
-        "workspacePath": null,
-        "id": "p6ogKsvJ5Inc9bd3"
+        "workspaceRoot": "/Users/makspiven/Documents/Курси веб/dev-StarBuks",
+        "workspacePath": "dev/sass/variables.scss",
+        "id": "yqmlT2RwG0QYfLpS"
     },
     {
         "type": "File",
-        "name": "d:\\Project\\dev-project\\dev-Fill&Sin\\dev\\style.scss",
+        "name": "/Users/makspiven/Documents/Курси веб/dev-StarBuks/dev/sass/global.scss",
         "parent_id": null,
-        "fsPath": "d:\\Project\\dev-project\\dev-Fill&Sin\\dev\\style.scss",
-        "workspaceRoot": null,
-        "workspacePath": null,
-        "id": "U2AJb6PcVDlMBoeQ"
+        "workspaceRoot": "/Users/makspiven/Documents/Курси веб/dev-StarBuks",
+        "workspacePath": "dev/sass/global.scss",
+        "id": "x4VetJapkCrP0yAq"
     }
 ]

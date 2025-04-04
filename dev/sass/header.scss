@@ -1,1 +1,70 @@
+.header {
+    padding: 48px 0;
 
+    .container {
+        --gap: 94px;
+        gap: var(--gap);
+        display: flex;
+    }
+
+    &-nav {
+        display: flex;
+        gap: var(--gap);
+
+        &_item {
+            font-size: 20px;
+            color: $color-text;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+.mobile-container {
+    display: flex;
+    align-items: center;
+}
+
+.button-burger {
+    --width: 42px;
+    margin-left: auto;
+    position: relative;
+    width: var(--width);
+
+    span {
+        @include burger;
+
+        &::before,
+        &::after {
+            content: "";
+            @include burger;
+        }
+
+        &::before {
+            top: 8px;
+        }
+
+        &::after {
+            top: 17px;
+        }
+    }
+
+    &.active {
+        span {
+            transform: rotate(-45deg);
+
+
+            &:before {
+                opacity: 0;
+                transform: rotate(90deg) translate(-15px, 0px);
+            }
+
+            &:after {
+                transform: rotate(90deg) translate(-15px, 0px);
+            }
+        }
+    }
+
+}
