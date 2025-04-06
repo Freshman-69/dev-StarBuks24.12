@@ -14,6 +14,8 @@
         &_item {
             font-size: 20px;
             color: $color-text;
+            padding: 5px 0
+            ;
 
             &:hover {
                 color: $secondary-color;
@@ -53,7 +55,7 @@
 
     &.active {
         span {
-            transform: rotate(-45deg);
+            transform: rotate(-45deg) translate(-7px, 5px);
 
 
             &:before {
@@ -62,7 +64,7 @@
             }
 
             &:after {
-                transform: rotate(90deg) translate(-15px, 0px);
+                transform: rotate(90deg) translate(-16px, 0px);
             }
         }
     }
