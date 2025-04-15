@@ -1,17 +1,65 @@
 html {
     font-size: $font-size;
     font-family: $font-primary;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: $bg-body;
     color: $color-text;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 
 }
 
 section {
     margin-bottom: $section-margin;
 }
+
+a {
+    color: $color-text;
+
+    &:hover {
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+
+.btn-arrow {
+    --size: 84px;
+    --icon-size: 35px;
+    --border-radius: 29px;
+    --border-width: 3px;
+    height: calc(var(--size) - var(--border-width) * 2);
+    width: calc(var(--size) - var(--border-width) * 2);
+    border-radius: var(--border-radius);
+    background-color: $bg-footer;
+    padding: 25px;
+    position: relative;
+
+    @include flex-centered;
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: $bg-gradient;
+        width: calc(100% + var(--border-width));
+        height: calc(100% + var(--border-width));
+        border-radius: calc(var(--border-radius) + 1px);
+        z-index: -1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.icon-svg {
+    height: var(--icon-size);
+    width: var(--icon-size);
+}
+
 
 .logo {
     max-width: 195px;
@@ -25,6 +73,14 @@ section {
     margin-right: auto;
 }
 
+.text-gradient {
+    background-clip: text;
+    color: transparent;
+    background-image: $bg-gradient;
+}
+
+
+
 .show {
     display: block !important;
 }
@@ -32,11 +88,19 @@ section {
 .d-none {
     display: none !important;
 }
+
 .d-block {
     display: block !important;
 }
+
 .d-flex {
     display: flex !important;
+}
+
+.svg-sprite {
+    visibility: hidden;
+    height: 0;
+    width: 0;
 }
 
 ::selection {

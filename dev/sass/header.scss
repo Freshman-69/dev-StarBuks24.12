@@ -13,13 +13,7 @@
 
         &_item {
             font-size: 20px;
-            color: $color-text;
-            padding: 5px 0
-            ;
-
-            &:hover {
-                color: $secondary-color;
-            }
+            padding: 5px 0;
         }
     }
 }
