@@ -29,16 +29,20 @@ a {
 
 
 .btn-arrow {
-    --size: 84px;
-    --icon-size: 35px;
-    --border-radius: 29px;
-    --border-width: 3px;
+    --size: 87px;
+    --icon-size: 39px;
+    --border-radius: 30px;
+    --border-width: 4px;
     height: calc(var(--size) - var(--border-width) * 2);
     width: calc(var(--size) - var(--border-width) * 2);
     border-radius: var(--border-radius);
-    background-color: $bg-footer;
-    padding: 25px;
+    background-color: #0B0C0D;
+    padding: 30px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3px;
 
     @include flex-centered;
     &::before {
@@ -74,9 +78,10 @@ a {
 }
 
 .text-gradient {
-    background-clip: text;
+    
     color: transparent;
     background-image: $bg-gradient;
+    background-clip: text;
 }
 
 
