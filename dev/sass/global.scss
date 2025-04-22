@@ -142,6 +142,7 @@ a {
 
     &:hover {
         color: $color-title;
+
         &:before {
             width: 350px;
             height: 350px;
@@ -240,6 +241,43 @@ a {
     color: transparent;
     background-image: $bg-gradient;
     background-clip: text;
+}
+
+.label {
+
+    --size: 184px;
+    --before-size: calc(var(--size) - 24px);
+    width: var(--before-size);
+    height: var(--before-size);
+    box-shadow: -4.56px 15.52px 26.48px #143e2875;
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+
+    &.label_text-large {
+        font-size: 62px;
+    }
+
+    &.label_text-sm {
+        --size: 133px;
+        font-size: 32px
+    }
+
+    &:before {
+        content: var(--content);
+        @include transform-centered;
+        @include flex-centered;
+        width: var(--size);
+        height: var(--size);
+        background: url(./assets/img/label.png) center/contain no-repeat;
+
+    }
 }
 
 
