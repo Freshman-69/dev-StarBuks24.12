@@ -112,6 +112,7 @@ a {
 
     &.template-title_row-reverse {
         flex-direction: row-reverse;
+        margin-left: auto;
     }
 }
 
@@ -172,16 +173,13 @@ a {
             z-index: -1;
             border-radius: 45px;
         }
-
     }
 
     &.btn-sm {
         padding: 17px 39px;
         font-size: 17px;
         font-weight: 500;
-
     }
-
 
 }
 
@@ -223,7 +221,6 @@ a {
     width: var(--icon-size);
 }
 
-
 .logo {
     max-width: 195px;
 }
@@ -244,7 +241,6 @@ a {
 }
 
 .label {
-
     --size: 184px;
     --before-size: calc(var(--size) - 24px);
     width: var(--before-size);
@@ -276,6 +272,7 @@ a {
         width: var(--size);
         height: var(--size);
         background: url(./assets/img/label.png) center/contain no-repeat;
+        transform: translate(-50%, -50%) rotate(-15deg);
 
     }
 }
