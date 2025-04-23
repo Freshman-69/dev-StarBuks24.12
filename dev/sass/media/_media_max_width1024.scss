@@ -2,6 +2,7 @@
     .header {
         padding: 34px 0;
 
+
         .container {
             gap: 0;
         }
@@ -41,6 +42,62 @@
         left: 0;
         top: 88px;
         width: 100%;
+    }
+
+    .banner {
+        .container {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 26px;
+        }
+
+        &-img {
+            max-width: 271px;
+            position: relative;
+        }
+    }
+
+
+    .template-title {
+        margin-bottom: 36px;
+
+        h1,
+        h2 {
+            font-size: 48px;
+            margin-bottom: 36px;
+        }
+
+        &.template-title_row,
+        &.template-title_row-reverse {
+            max-width: 767px;
+            gap: 56px;
+
+            h1,
+            h2,
+            h6 {
+                margin-bottom: 0;
+                min-width: 330px;
+            }
+        }
+
+        &.template-title_row-reverse {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .label {
+        --size: 82px;
+        font-size: 18px;
+
+
+        &.label_text-large {
+            font-size: 24px;
+        }
+
+        &.label_text-sm {
+            --size: 82px;
+            font-size: 18px;
+        }
     }
 
     .footer {
