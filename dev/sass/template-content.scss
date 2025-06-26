@@ -1,0 +1,45 @@
+.template-content {
+    --tamplate-y: 36px;
+    --tamplate-x: 45px;
+    padding-top: var(--tamplate-y);
+    display: flex;
+    justify-content: space-between;
+    gap: var(--tamplate-x);
+
+    
+
+    &__img-box {
+        position: relative;
+        max-width: 465px;
+        width: 100%;
+
+        img {
+            transform: translate(var(--tamplate-x), calc(var(--tamplate-y) * -1));
+            mask: url(./assets/img/mask.svg) no-repeat;
+        }
+
+        .label {
+            right: -35px;
+            top: -15px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        &::before {
+            content: "";
+            mask: url(./assets/img/mask.svg) no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $primary-color;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    &__info-box {
+        max-width: 457px;
+        width: 100%;
+    }
+
+}
